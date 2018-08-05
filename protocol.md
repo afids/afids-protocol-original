@@ -1,8 +1,5 @@
 # Fiducial Protocol
 
-## Live Tutorial:
-* Given by Jonathan C. Lau, John Demarco, Kayla Ferko, and Geetika Gupta as part of Brainhack Western 2018: https://www.youtube.com/watch?v=huGtd19_uiM
-
 ## Preparation
 * Download and use Slicer 4.6.2
 
@@ -96,4 +93,7 @@ Create a new Markup list entitled Fid32_[VolumeID]_[Rater]_[N]. Click on ACPC Li
   * Posterior and most superior portion visible on axial slice
 ## 32. L olfactory sulcal fundus (as in 31)
 
-Again, save the fiducial file locally first and copy it into the Dropbox directory called UPLOAD_Fid32.
+Save the fiducial file (.fcsv) locally.
+
+## Resources:
+* Given by Jonathan C. Lau, John Demarco, Kayla Ferko, and Geetika Gupta as part of Brainhack Western 2018: https://www.youtube.com/watch?v=huGtd19_uiM
