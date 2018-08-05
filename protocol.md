@@ -96,4 +96,5 @@ Create a new Markup list entitled Fid32_[VolumeID]_[Rater]_[N]. Click on ACPC Li
 Save the fiducial file (.fcsv) locally.
 
 ## Resources:
-* Given by Jonathan C. Lau, John Demarco, Kayla Ferko, and Geetika Gupta as part of Brainhack Western 2018: https://www.youtube.com/watch?v=huGtd19_uiM
+* Tutorial given as part of Brainhack Western 2018: https://www.youtube.com/watch?v=huGtd19_uiM
+* Git repository for BHG18 tutorial results: https://github.com/jclauneuro/BHG18_landmarkprotocol/
