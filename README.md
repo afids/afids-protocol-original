@@ -7,6 +7,8 @@ An *open framework* for *evaluating correspondence* in brain images and *teachin
 * A poster is available [here](INCFwebsite.com)
 * Preprint coming soon
 
+![afids](figures/figure1_afids.png)
+
 ## Resources
 
 ### Open Datasets
