@@ -1,4 +1,13 @@
 # AFIDs
 
-* AFIDs = anatomical fiducials
-* Here is the original validated AFID32 protocol
+An open framework for evaluating correspondence in brain images using *anatomical fiducial* placement
+
+## AFID32
+* The original [AFID32 protocol](protocol.md) has been validated and used for teaching at a number of BHG events
+* A poster is available [here](INCFwebsite.com)
+* Preprint coming soon!
+
+## Other Resources
+* [Website](https://github.com/jclauneuro/BHG18_landmarkprotocol) for the AFID32 protocol as taught as a training workshop for BHG18
+* [Tutorial](https://www.youtube.com/watch?v=huGtd19_uiM) given as part of BHG18
+* Download [Slicer](https://www.slicer.org)
