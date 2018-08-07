@@ -4,7 +4,8 @@ An *open framework* for *evaluating correspondence* in brain images and *teachin
 
 ## AFID32
 * The [AFID32 protocol](protocol.md) has been validated and used for teaching at a number of local and [BHG-related events](https://github.com/jclauneuro/BHG18_landmarkprotocol)
-* A poster is available [here](INCFwebsite.com)
+* 60+ raters trained
+* Here's a link to the poster from [NeuroInformatics 2018](INCFwebsite.com)
 * Preprint coming soon
 
 ![afids](figures/figure1_afids.png)
