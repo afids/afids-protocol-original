@@ -24,6 +24,6 @@ An *open framework* for *evaluating correspondence* in brain images and *teachin
 
 ## Other Resources
 * [Website](https://github.com/jclauneuro/BHG18_landmarkprotocol) for the AFID32 protocol as taught as a training workshop for BHG18
-* [Tutorial](https://www.youtube.com/watch?v=huGtd19_uiM) given as part of BHG18
+* [Tutorial](https://github.com/BrainhackWestern/BrainhackWestern.github.io/wiki/Tutorials) given as part of BHG18 [[video](https://www.youtube.com/watch?v=huGtd19_uiM)]
 * Download [Slicer](https://www.slicer.org)
 * [AFID validator](http://fidvalidator.pythonanywhere.com/vib1) (alpha stage); started at [BHG18-Western](https://github.com/BrainhackWestern/BrainhackWestern.github.io/wiki/projects#landmark-validator)
