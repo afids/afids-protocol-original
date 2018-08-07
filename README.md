@@ -7,6 +7,14 @@ An open framework for evaluating correspondence in brain images using *anatomica
 * A poster is available [here](INCFwebsite.com)
 * Preprint coming soon
 
+## Key References
+* Agile12v1.0
+* Colin27
+* MNI2009b
+* Slicer
+* Talairach1957
+* Talairach1988
+
 ## Other Resources
 * [Website](https://github.com/jclauneuro/BHG18_landmarkprotocol) for the AFID32 protocol as taught as a training workshop for BHG18
 * [Tutorial](https://www.youtube.com/watch?v=huGtd19_uiM) given as part of BHG18
