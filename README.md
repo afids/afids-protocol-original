@@ -3,12 +3,15 @@
 An open framework for evaluating correspondence in brain images and teaching neuroanatomy using anatomical fiducial placement
 
 ## AFID32
-* The [AFID32 protocol](protocol.md) has been validated and used for teaching at a number of local and [BHG-related events](https://github.com/jclauneuro/BHG18_landmarkprotocol)
+* The [AFID32 protocol](protocol.md) is an anatomical fiducial placement protocol that has been validated and used for teaching at a number of local and [BHG-related events](https://github.com/jclauneuro/BHG18_landmarkprotocol)
 * 60+ raters trained
-* Here's a link to the poster from [NeuroInformatics 2018](http://dx.doi.org/10.7490/f1000research.1115895.1)
-* Preprint coming soon
 
 ![afids](figures/figure1_afids.png)
+
+## References
+
+* Portions of this work were presented as an abstract/demo at [NeuroInformatics 2018](http://dx.doi.org/10.7490/f1000research.1115895.1)
+* Preprint coming soon
 
 ## Resources
 
