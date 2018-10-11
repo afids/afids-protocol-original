@@ -2,18 +2,19 @@
 
 An open framework for evaluating correspondence in brain images and teaching neuroanatomy using anatomical fiducial placement
 
-## AFID32
-* The [AFID32 protocol](protocol.md) is an anatomical fiducial placement protocol that has been validated and used for teaching at a number of local and [BHG-related events](https://github.com/jclauneuro/BHG18_landmarkprotocol)
-* 60+ raters trained
+* The [AFID protocol](protocol.md) is an anatomical fiducial placement protocol that has been validated and used for teaching at a number of local and [BHG-related events](https://github.com/jclauneuro/BHG18_landmarkprotocol)
+* AFID placement is reproducible, not overtly manually intensive (20-40 minutes once trained), and more sensitive to local registration errors than standard voxel overlap measures.
+* This protocol and study framework leverages open resources and tools, and has been developed with full transparency in mind so that others may freely use, adopt, and modify.
+* 60+ raters trained to date.
 
 ![afids](figures/figure1_afids.png)
 
-## References
+## References and Resources
 
-* Portions of this work were presented as an abstract/demo at [NeuroInformatics 2018](http://dx.doi.org/10.7490/f1000research.1115895.1)
-* Preprint coming soon
+### Publications
 
-## Resources
+* Lau JC, Parrent AG, Demarco J, Gupta G, Park PJ, Ferko K, Khan AR, Peters TM. AFIDs: an open framework for evaluating correspondence between magnetic resonance images of the human brain using fiducial placement. F1000 Research. Demo presented at INCF NeuroInformatics in Montreal, QC, Canada. 2018. [[ref](http://dx.doi.org/10.7490/f1000research.1115895.1)]
+* Preprint coming soon!
 
 ### Open Datasets
 * **Agile12v2016:** Lau JC, MacDougall KW, Arango MF, Peters TM, Parrent AG, Khan AR: Ultra-High Field Template-Assisted Target Selection for Deep Brain Stimulation Surgery. World Neurosurg 103:531–537, 2017. [[download](https://www.nitrc.org/projects/deepbrain7t/)] [[ref](http://dx.doi.org/10.1016/j.wneu.2017.04.043)]
