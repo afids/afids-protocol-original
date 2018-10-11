@@ -1,6 +1,6 @@
 # AFIDs
 
-An *open framework* for *evaluating correspondence* in brain images and *teaching neuroanatomy* using *anatomical fiducial* placement
+An open framework for evaluating correspondence in brain images and teaching neuroanatomy using anatomical fiducial placement
 
 ## AFID32
 * The [AFID32 protocol](protocol.md) has been validated and used for teaching at a number of local and [BHG-related events](https://github.com/jclauneuro/BHG18_landmarkprotocol)
@@ -13,9 +13,9 @@ An *open framework* for *evaluating correspondence* in brain images and *teachin
 ## Resources
 
 ### Open Datasets
-* **Agile12v1.0:** Lau JC, MacDougall KW, Arango MF, Peters TM, Parrent AG, Khan AR: Ultra-High Field Template-Assisted Target Selection for Deep Brain Stimulation Surgery. World Neurosurg 103:531–537, 2017. [[download](https://www.nitrc.org/projects/deepbrain7t/)] [[ref](http://dx.doi.org/10.1016/j.wneu.2017.04.043)]
-* **Colin27:** Holmes CJ, Hoge R, Collins L, Woods R, Toga AWA, Evans ACA: Enhancement of MR Images Using Registration for Signal Averaging. J Comput Assist Tomogr 22:324–333, 1998. [[download](http://nist.mni.mcgill.ca/?p=935)] [[ref](http://dx.doi.org/10.1097/00004728-199803000-00032)]
-* **MNI2009b:** Fonov V, Evans AC, Botteron K, Almli RR, McKinstry RC, Collins LL, et al: Unbiased average age-appropriate atlases for pediatric studies. Neuroimage 54:313–327, 2011. [[download](http://www.bic.mni.mcgill.ca/ServicesAtlases/ICBM152NLin2009)] [[ref](http://dx.doi.org/10.1016/j.neuroimage.2010.07.033)]
+* **Agile12v2016:** Lau JC, MacDougall KW, Arango MF, Peters TM, Parrent AG, Khan AR: Ultra-High Field Template-Assisted Target Selection for Deep Brain Stimulation Surgery. World Neurosurg 103:531–537, 2017. [[download](https://www.nitrc.org/projects/deepbrain7t/)] [[ref](http://dx.doi.org/10.1016/j.wneu.2017.04.043)]
+* **Colin27:** Holmes CJ, Hoge R, Collins L, Woods R, Toga AW, Evans AC: Enhancement of MR Images Using Registration for Signal Averaging. J Comput Assist Tomogr 22:324–333, 1998. [[download](http://nist.mni.mcgill.ca/?p=935)] [[ref](http://dx.doi.org/10.1097/00004728-199803000-00032)]
+* **MNI152NLin2009bAsym:** Fonov V, Evans AC, Botteron K, Almli RR, McKinstry RC, Collins LL, et al: Unbiased average age-appropriate atlases for pediatric studies. Neuroimage 54:313–327, 2011. [[download](http://www.bic.mni.mcgill.ca/ServicesAtlases/ICBM152NLin2009)] [[ref](http://dx.doi.org/10.1016/j.neuroimage.2010.07.033)]
 * **OASIS1:** Marcus DS, Fotenos AF, Csernansky JG, Morris JC, Buckner RL: Open Access Series of Imaging Studies: Longitudinal MRI Data in Nondemented and Demented Older Adults. J Cogn Neurosci 22:2677–2684, 2010. [[download](https://www.oasis-brains.org)] [[ref](http://dx.doi.org/10.1162/jocn.2009.21407)]
 
 ### Software
