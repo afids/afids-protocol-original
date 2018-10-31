@@ -7,7 +7,7 @@
 * [VolumeID]_[Contrast]_[Rater]_[N] (e.g. MNI2009b_T1_JL_1_20170511.fcsv)
   * [VolumeID] = the identifier for the volume on which you are performing the fiducial placements; for the tutorial it will be one of the well known MRI templates:
     * Colin27: average of 27 Colin brains
-    * MNI2009b: average of 152 healthy controls
+    * MNI2009b: average of 152 healthy controls 
     * Agile12v1.0: average of 12 healthy controls at 7T
   * [Contrast] = T1, T2, PD, other (typically will be T1)
   * [Rater] = the unique identifier for the rater performing the fiducial placement; convention will be first initial and last name to prevent overlap
@@ -22,21 +22,21 @@ The images first have to be AC-PC aligned using the **ACPC Transform Module**. W
 
 Next copy both AC and PC fiducials into “ACPC Line” and “Midline” Lists. To do this, right click on the individual fiducials (AC and PC) and select “Copy fiducial to another list” then add to both “ACPC Line” and “Midline” lists.
 
-![alt text](figures/img_1.png) 
-![alt text](figures/img_2.png) 
+<img src="figures/img_1.png" alt="drawing" width="400"/>
+<img src="figures/img_2.png" alt="drawing" width="400"/>
 
 Next, you will need to place a third fiducial marker in the “Midline” list. Select “Midline” list and place a fiducial marker in the superior interpeduncular fossa (Fid03 below; axial view to targeting) and name it Midline. Alternatively, use the intermamillary sulcus (Fid11 below).
-![alt text](figures/img_3.png)
+<img src="figures/img_3.png" alt="drawing" width="400"/>
 
 Next, you will perform the ACPC transform to realign the MRI volume. Under modules select **Registration>Specialized>ACPC Transform** (Left image below). Under the “ACPC transform” tab, select the “Parameter Set” dropdown tab and select “ACPC transform”. Below that is the “Transform Panel”. Under “ACPC Line” dropdown tab select “ACPC Line”, under “Midline” dropdown tab select “Midline”, and under “Output transform” dropdown tab select “New Linear Transform” and name it “Output Transform”. Next, click “Apply” at the bottom of the window (image below).
 
-![alt text](figures/img_4.png)
-![alt text](figures/img_5.png)
+<img src="figures/img_4.png" alt="drawing" width="400"/>
+<img src="figures/img_5.png" alt="drawing" width="400"/>
 
 Finally, under “Modules” go to “Transforms.” Under the “Active Transform” dropdown tab select “Output Transform” as the active transform. Next, under the “Apply Transform” menu, Select all 4 lists (i.e the original loaded volume, ACPC Line, Midline etc.) and click the arrow pointing right to transfer them from “Transformable” to “Transformed.” Your image and fiducials should shift to realign with the proper orthogonal axis.
 
-![alt text](figures/img_6.png)
-![alt text](figures/img_7.png)
+<img src="figures/img_6.png" alt="drawing" width="400"/>
+<img src="figures/img_7.png" alt="drawing" width="400"/>
 
 ## General Fiducial Placement Strategies
 Use the **"Jump to Slice"** feature to center your view on the fiducial of interest and ensure that the placed landmark appears accurate on all three standard views (axial, sagittal, coronal). Once a fiducial is placed, **dragging** the fiducial can allow for more refined placement. Holding down **shift** centers the view in all views on the cursor (use along with crosshair function). If a given fiducial is classified as **[midline]**, jump to an existing midline fiducial (e.g. AC or PC) and start by placing the fiducial on the **sagittal** view and refine placement using the other views. Try to place fiducials at the **boundary/edge** of the feature of interest. For some of the fiducials, the instructions for placement will explicitly say to place the landmark using information mostly from one view (e.g. axial view for olfactory sulcus). Be aware that changing the windowing of your images (and lighting in the room) may affect your perception of where landmarks should be placed. When you're satisfied with the location of a fiducial, **lock it in place** to prevent yourself from displacing it later. **NOTE: there is no UNDO feature for fiducial placements.**
