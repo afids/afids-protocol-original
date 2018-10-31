@@ -1,10 +1,10 @@
 # Fiducial Protocol
 
 ## Preparation
-* Download and use Slicer 4.6.2
+* Download and use Slicer 4.8.1
 
 ## Naming Scheme for Fiducial Files
-* [VolumeID]_[Contrast]_[Rater]_[N] (e.g. MNI2009b_T1_JL_1_20170511)
+* [VolumeID]_[Contrast]_[Rater]_[N] (e.g. MNI2009b_T1_JL_1_20170511.fcsv)
   * [VolumeID] = the identifier for the volume on which you are performing the fiducial placements; for the tutorial it will be one of the well known MRI templates:
     * Colin27: average of 27 Colin brains
     * MNI2009b: average of 152 healthy controls
@@ -14,22 +14,35 @@
   * [N] = reference for fiducial placement session (helpful if performing placements more than once; starting with 1)
   * [YYYYMMDD] = year month and date
 
-## AC-PC Placement
-* Download assigned volume/template from Dropbox or USB.
-* Go to Markups Module and create Module named ACPC_[VolumeID]_[Rater]_[N]. Place AC and PC landmarks: 
-  1. AC = anterior commissure (center)
-  2. PC = posterior commissure (center)
-* Save the fiducial file locally first and copy it into the Dropbox directory called UPLOAD_ACPC.
-
-## Apply existing AC-PC Transform
-Go to Transforms Module and apply existing ACPC Transform to volume. Will see the template shift in space. Note: The AC-PC fiducials placed in the previous step will no longer be aligned to the appropriate locations. This is okay. Go back to the Markups Module, click on ACPC_[VolumeID]_[Rater]_[N] and make the fiducials invisible.
+## Place AC and PC Fiducials
+After creating the Markups list as described above, the process begins by placing the anterior commissure landmark (for more information, see the Section below entitled Fiducial Placement Details). Once placed, click on the corresponding row in the Markups Module list and change the Name to "1" and Description to "AC". Next, place the posterior commissure landmark (see Section Fiducial Placement Details). Click on the corresponding row in the Markups Module list and change the Name to "2" and Description to "PC".
 
 ## Create new AC-PC Transform
-To create a new AC-PC Transform place AC and PC fiducial Markers in previous step. Created ACPC Line and Midline under Markup>List. Next copy AC and PC into ACPC Line and Midline Lists. Select Midline list and place a fiducial marker in the superior interpeduncular fossa (Axial view to targeting) and name it Midline. Under modules select Registration>Specialized>ACPC Transform. Under ACPC transform tab select Parameter Set dropdown tab and click ACPC transform. Below that is the Transform Panel, under ACPC Line select ACPC Line, under Midline select Midline, and under Output transform select New Linear Transform and name it output transform. Click apply at the bottom of the window. Next under Modules go to Transforms and under Active Transform dropdown tab select output transform. Under Apply Transform Select all 4 lists (i.e Colin27_t1_tal_hires, ACPC Line, Midline etc.) and transfer them to the transformed side. 
-General Fiducial Placement Strategies
-Use the "Jump to Slice" feature to center your view on the fiducial of interest and ensure that the placed landmark appears accurate on all three standard views (axial, sagittal, coronal). Once a fiducial is placed, dragging the fiducial can allow for more refined placement. Holding down shift centers the view in all views on the cursor (use along with crosshair function). If a given fiducial is classified as [midline], jump to an existing midline fiducial (e.g. AC or PC) and start by placing the fiducial on the sagittal view and refine placement using the other views. Try to place fiducials at the boundary/edge of the feature of interest. For some of the fiducials, the instructions for placement will explicitly say to place the landmark using information mostly from one view (e.g. axial view for olfactory sulcus). Be aware that changing the windowing of your images (and lighting in the room) may affect your perception of where landmarks should be placed. When you're satisfied with the location of a fiducial, lock it in place to prevent yourself from displacing it later. NOTE: there is no UNDO feature for fiducial placements.
-Placement of Fiducial Series
-Create a new Markup list entitled Fid32_[VolumeID]_[Rater]_[N]. Click on ACPC Line and copy over AC and PC to your new list by right clicking each fiducial, choosing "Copy fiducial to another list", and selecting Fid32_[VolumeID]_[Rater]_[N]. Place the following 30 fiducials, enter the number corresponding to the fiducial in the Name textbox and enter the underlined anatomical structure in the corresponding Description textbox:
+The images first have to be AC-PC aligned using the **ACPC Transform Module**. Within the Markups Module, we next have to create two new lists: “ACPC Line” and “Midline” by clicking "Create New MarkupsFiducial as..." then entering the name "ACPC Line" and separately "Midline".
+
+Next copy both AC and PC fiducials into “ACPC Line” and “Midline” Lists. To do this, right click on the individual fiducials (AC and PC) and select “Copy fiducial to another list” then add to both “ACPC Line” and “Midline” lists.
+
+![alt text](figures/img_1.png) 
+![alt text](figures/img_2.png) 
+
+Next, you will need to place a third fiducial marker in the “Midline” list. Select “Midline” list and place a fiducial marker in the superior interpeduncular fossa (Fid03 below; axial view to targeting) and name it Midline. Alternatively, use the intermamillary sulcus (Fid11 below).
+![alt text](figures/img_3.png)
+
+Next, you will perform the ACPC transform to realign the MRI volume. Under modules select **Registration>Specialized>ACPC Transform** (Left image below). Under the “ACPC transform” tab, select the “Parameter Set” dropdown tab and select “ACPC transform”. Below that is the “Transform Panel”. Under “ACPC Line” dropdown tab select “ACPC Line”, under “Midline” dropdown tab select “Midline”, and under “Output transform” dropdown tab select “New Linear Transform” and name it “Output Transform”. Next, click “Apply” at the bottom of the window (image below).
+
+![alt text](figures/img_4.png)
+![alt text](figures/img_5.png)
+
+Finally, under “Modules” go to “Transforms.” Under the “Active Transform” dropdown tab select “Output Transform” as the active transform. Next, under the “Apply Transform” menu, Select all 4 lists (i.e the original loaded volume, ACPC Line, Midline etc.) and click the arrow pointing right to transfer them from “Transformable” to “Transformed.” Your image and fiducials should shift to realign with the proper orthogonal axis.
+
+![alt text](figures/img_6.png)
+![alt text](figures/img_7.png)
+
+## General Fiducial Placement Strategies
+Use the **"Jump to Slice"** feature to center your view on the fiducial of interest and ensure that the placed landmark appears accurate on all three standard views (axial, sagittal, coronal). Once a fiducial is placed, **dragging** the fiducial can allow for more refined placement. Holding down **shift** centers the view in all views on the cursor (use along with crosshair function). If a given fiducial is classified as **[midline]**, jump to an existing midline fiducial (e.g. AC or PC) and start by placing the fiducial on the **sagittal** view and refine placement using the other views. Try to place fiducials at the **boundary/edge** of the feature of interest. For some of the fiducials, the instructions for placement will explicitly say to place the landmark using information mostly from one view (e.g. axial view for olfactory sulcus). Be aware that changing the windowing of your images (and lighting in the room) may affect your perception of where landmarks should be placed. When you're satisfied with the location of a fiducial, **lock it in place** to prevent yourself from displacing it later. **NOTE: there is no UNDO feature for fiducial placements.**
+
+## Placement of Fiducial Series
+Create a new Markup list entitled **Fid32_[VolumeID]_[Rater]_[N]**. Click on **ACPC Line** and copy over AC and PC to your new list by right clicking each fiducial, choosing "Copy fiducial to another list", and selecting **Fid32_[VolumeID]_[Rater]_[N]**. Place the following **30 fiducials**, enter the number corresponding to the fiducial in the Name textbox and enter the underlined anatomical structure in the corresponding Description textbox:
 
 ## 1. AC [midline]
 
