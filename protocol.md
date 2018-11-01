@@ -73,6 +73,7 @@ Create a new Markup list entitled **Fid32_[VolumeID]_[Rater]_[N]**. Click on **A
   
 ## 6. R superior LMS = right superior lateral mesencephalic sulcus
   * Localize using axial slices; at boundary of CSF and brain
+  * Use the coronal and sagittal views to optimize the location so that this point is in the angle created in all views
   
 ![alt text](figures/06_RSLMS.png "06. Right Superior Lateral Mesencephalic Sulcus")
   
@@ -91,12 +92,14 @@ Create a new Markup list entitled **Fid32_[VolumeID]_[Rater]_[N]**. Click on **A
 ![alt text](figures/09_LILMS.png "09. Left Inferior Lateral Mesencephalic Sulcus")
 
 ## 10. Culmen [midline]
-  * most superior point of cerebellar vermis; one of the vermian lobules
+   * Click to jump to AC landmark and place using the sagittal view
+   * most superior point of cerebellar vermis; one of the vermian lobules
   
 ![alt text](figures/10_culmen.png "10. Culmen")
   
 ## 11. Intermammillary sulcus [midline]
-  * Midpoint between the mamillary bodies
+   * Click to jump to AC landmark and place using the sagittal view 
+   * Midpoint between the mamillary bodies; remember to place at the border of the grey matter
 
 ![alt text](figures/11_IMS.png "11. Intermammillary sulcus")  
   
@@ -109,7 +112,9 @@ Create a new Markup list entitled **Fid32_[VolumeID]_[Rater]_[N]**. Click on **A
 ![alt text](figures/13_LMB.png "13. Left Mammillary body")
 
 ## 14. pineal gland [midline]
-
+  * Click to jump to the AC landmark on the sagittal view and place this pineal gland landmark in the middle of gland (use all views to correctly place this point).
+   * Note that sometimes the pineal gland can be calcified, which makes it more difficult to find the center of the gland. Be sure to scroll back and forth in all views to find the center point even if it looks to be in a calcified portion of the pineal
+   
 ![alt text](figures/14_PG.png "14. Pineal Gland")
 
 ## 15. R LV at AC = right lateral aspect of frontal horn on coronal section of AC
@@ -122,6 +127,7 @@ Create a new Markup list entitled **Fid32_[VolumeID]_[Rater]_[N]**. Click on **A
 ![alt text](figures/16_LLVAC.png "16. Left Lateral Aspect of Frontal Horn on Coronal Section of AC")
 
 ## 17. R LV at PC = right lateral aspect of frontal horn on coronal section of PC
+* Defined at same coronal slice as PC (jump to it)
 
 ![alt text](figures/17_RLVPC.png	"17. Right Lateral Aspect of Frontal Horn on Coronal Section of PC")
 
@@ -130,17 +136,17 @@ Create a new Markup list entitled **Fid32_[VolumeID]_[Rater]_[N]**. Click on **A
 ![alt text](figures/18_LLVPC.png	"18. Left Lateral Aspect of Frontal Horn on Coronal Section of PC")
 
 ## 19. Genu of CC = genu of corpus callosum [midline]
-  * Place using sagittal view and optimizing as most anterior point on coronal slice
+ * Jump to AC and place using sagittal view. Optimize using coronal view as most anterior point of the corpous callosum on coronal slice
   
 ![alt text](figures/19_Genu.png	"19. Genu of Corpus Callosum")
   
 ## 20. Splenium of CC = splenium of the corpus callosum [midline]
-  * Place using sagittal view and optimize as inferiormost point on axial section
+  * Jump to AC and place using sagittal view. Optimize using axial view as the inferiormost point on axial section
   
 ![alt text](figures/20_splenium.png	"20. Splenium of Corpus Callosum ")
   
 ## 21. R AL temporal horn = right anterolateral temporal horn
-  * Place using coronal view as anteriormost (and lateral) point of temporal horn
+  * Place using coronal view as anteriormost (and lateral) point of temporal horn; scroll back and forth to find the spot where the CSF is barely visible in the coronal view.
   * Choose a more ventral/inferior point on the coronal view
   * Place at the boundary of CSF and brain
   
@@ -163,15 +169,19 @@ Create a new Markup list entitled **Fid32_[VolumeID]_[Rater]_[N]**. Click on **A
 
 ## 25. R inferior AM temporal horn
   * Initially place using coronal view
+  * Jump to 21 (right AL temporal horn) and scroll to find the most medial (and anterior) showing of the CSF
+  * Optimize using the axial view again to find the most anteromedial showing of the CSF
   
 ![alt text](figures/25_RIAMTH.png	"25. R inferior AM temporal horn")
   
 ## 26. L inferior AM temporal horn (as in 25)
-
+  * Jump to 22 (left AL temporal horn) and scroll the find the most medial showing of the CSF
+  
 ![alt text](figures/26_LIAMTH.png	"26. L inferior AM temporal horn")
 
 ## 27. R indusium griseum origin
   * Defined on sagittal slice at takeoff from posterior hippocampus below splenium
+  * Begin on the sagittal view (make sure the view is on the right side), scroll back and forrth to find the point where the tail of the hippocampus begins to become pointed and "takeoff"
   
 ![alt text](figures/27_RIGO.png	"27. R indusium griseum origin")
   
@@ -180,7 +190,8 @@ Create a new Markup list entitled **Fid32_[VolumeID]_[Rater]_[N]**. Click on **A
 ![alt text](figures/28_LIGO.png	"28. L indusium griseum origin")
 
 ## 29. R ventral occipital horn
-  * Defined on ventral/inferior portion of last visible coronal slice with occipital horn
+  * Defined on ventral/inferior portion of last visible coronal slice with occipital horn; if it is hard to see in the coronal view then you can make the first placement using the axial view (make sure the view is on the right side of the brain).
+  * Optimize using other views
   * Optimize using other views
   
 ![alt text](figures/29_RVOH.png	"29. R ventral occipital horn")
