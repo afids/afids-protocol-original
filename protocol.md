@@ -46,28 +46,30 @@ Use the **"Jump to Slice"** feature to center your view on the fiducial of inter
 Create a new Markup list entitled **Fid32_[VolumeID]_[Rater]_[N]**. Click on **ACPC Line** and copy over AC and PC to your new list by right clicking each fiducial, choosing "Copy fiducial to another list", and selecting **Fid32_[VolumeID]_[Rater]_[N]**. Place the following **30 fiducials**, enter the number corresponding to the fiducial in the Name textbox and enter the underlined anatomical structure in the corresponding Description textbox:
 
 ## 1. AC [midline]
-
+  * Place at the center of the commissure
+  
 ![alt text](figures/01_AC.png "01. Anterior Commissure")
 
 ## 2. PC [midline]
-
+  * Place at the center of the commissure
+  
 ![alt text](figures/02_PC.png "02. Posterior Commissure")
 
 ## 3. infracollicular sulcus [midline]
-  * inferior part of sulcus of inferior colliculi at the midline junction of inferior colliculi
-  * Inferiormost boundary of longitudinal intercollicular sulcus
+  * Inferior part of sulcus of inferior colliculi at the midline junction of inferior colliculi
+  * Inferior most boundary of longitudinal intercollicular sulcus
 
 ![alt text](figures/03_InfracollicularSulcus.png "03. Infracollicular Sulcus")
   
 ## 4. PMJ = pontomesencephalic junction [midline]
-  * At the junction but because it doesn't end on a sharp point choose the ventral/inferior/pontine side of the junction using the sagittal and coronal views
+  * At the junction but because the junction tapers off gradually, choose the ventral/inferior/pontine side of the junction using the sagittal and coronal views
   
 ![alt text](figures/04_PMJ.png "04. Pontomesencephalic Junction")
   
 ## 5. superior interpeduncular fossa [midline]
-  * most superior axial slice
+  * Most superior axial slice showing the interpeduncular fossa
   * Use coronal slice to help optimize location at boundary of 3rd ventricle and surrounding brain
-  * Commentary: nice landmark for DBS since subthalamic nucleus close by
+  * Commentary: useful fiducial location for DBS since subthalamic nucleus close by
   
 ![alt text](figures/05_SIPF.png "05. Superior Interpeduncular Fossa ")
   
@@ -77,23 +79,25 @@ Create a new Markup list entitled **Fid32_[VolumeID]_[Rater]_[N]**. Click on **A
   
 ![alt text](figures/06_RSLMS.png "06. Right Superior Lateral Mesencephalic Sulcus")
   
-## 7. L superior LMS = left superior lateral mesencephalic sulcus (as in 6)
+## 7. L superior LMS = left superior lateral mesencephalic sulcus
+  * As in 6
 
 ![alt text](figures/07_LSLMS.png "07. Left Superior Lateral Mesencephalic Sulcus")
 
 ## 8. R inferior LMS = right inferior lateral mesencephalic sulcus
   * Localize at junction between midbrain and pons first using axial slices
-  * Then refine positioning using sagittal view (at the change in angle of brainstem at the PMJ)
+  * Refine positioning using sagittal view (at the change in angle of brainstem at the PMJ)
   
 ![alt text](figures/08_RILMS.png "08. Right Inferior Lateral Mesencephalic Sulcus")
   
-## 9. L inferior LMS = left inferior lateral mesencephalic sulcus (as in 8)
+## 9. L inferior LMS = left inferior lateral mesencephalic sulcus
+  * As in 8
 
 ![alt text](figures/09_LILMS.png "09. Left Inferior Lateral Mesencephalic Sulcus")
 
 ## 10. Culmen [midline]
-   * Click to jump to AC landmark and place using the sagittal view
-   * most superior point of cerebellar vermis; one of the vermian lobules
+   * Jump to AC or another midline AFID to get to the mid-sagittal slice, then place using the sagittal view
+   * Most superior point of cerebellar vermis; one of the vermian lobules
   
 ![alt text](figures/10_culmen.png "10. Culmen")
   
@@ -103,17 +107,19 @@ Create a new Markup list entitled **Fid32_[VolumeID]_[Rater]_[N]**. Click on **A
 
 ![alt text](figures/11_IMS.png "11. Intermammillary sulcus")  
   
-## 12. R MB = right mammillary body (center)
+## 12. R MB = right mammillary body
+  * Place at the center of the mammillary body
 
 ![alt text](figures/12_RMB.png "12. Right Mammillary body")
 
-## 13. L MB = left mamillary body (center)
+## 13. L MB = left mamillary body
+  * As in 12
 
 ![alt text](figures/13_LMB.png "13. Left Mammillary body")
 
 ## 14. pineal gland [midline]
-  * Click to jump to the AC landmark on the sagittal view and place this pineal gland landmark in the middle of gland (use all views to correctly place this point).
-   * Note that sometimes the pineal gland can be calcified, which makes it more difficult to find the center of the gland. Be sure to scroll back and forth in all views to find the center point even if it looks to be in a calcified portion of the pineal
+  * Click to jump to the AC landmark on the sagittal view and place AFID in the middle of gland (use all views to correctly place this point)
+  * Occasionally the pineal gland is calcified, which makes it more difficult to find the center of the gland. Be sure to scroll back and forth in all views to find the true center point regardless of asymmetry of calcifications
    
 ![alt text](figures/14_PG.png "14. Pineal Gland")
 
@@ -122,7 +128,8 @@ Create a new Markup list entitled **Fid32_[VolumeID]_[Rater]_[N]**. Click on **A
   
 ![alt text](figures/15_RLVAC.png "15. Right Lateral Aspect of Frontal Horn on Coronal Section of AC")
   
-## 16. L LV at AC = left lateral aspect of frontal horn on coronal section of AC (as in 15)
+## 16. L LV at AC = left lateral aspect of frontal horn on coronal section of AC
+  * As in 15
 
 ![alt text](figures/16_LLVAC.png "16. Left Lateral Aspect of Frontal Horn on Coronal Section of AC")
 
@@ -131,39 +138,46 @@ Create a new Markup list entitled **Fid32_[VolumeID]_[Rater]_[N]**. Click on **A
 
 ![alt text](figures/17_RLVPC.png	"17. Right Lateral Aspect of Frontal Horn on Coronal Section of PC")
 
-## 18. L LV at PC = left lateral aspect of frontal horn on coronal section of PC (as in 17)
+## 18. L LV at PC = left lateral aspect of frontal horn on coronal section of PC
+  * As in 17
 
 ![alt text](figures/18_LLVPC.png	"18. Left Lateral Aspect of Frontal Horn on Coronal Section of PC")
 
 ## 19. Genu of CC = genu of corpus callosum [midline]
- * Jump to AC and place using sagittal view. Optimize using coronal view as most anterior point of the corpous callosum on coronal slice
+ * Jump to AC and place using sagittal view
+ * Optimize using coronal view as most anterior point of the corpus callosum on coronal slice
   
 ![alt text](figures/19_Genu.png	"19. Genu of Corpus Callosum")
   
 ## 20. Splenium of CC = splenium of the corpus callosum [midline]
-  * Jump to AC and place using sagittal view. Optimize using axial view as the inferiormost point on axial section
+  * Jump to AC and place using sagittal view.
+  * Optimize using axial view as the inferior-most point on axial section
   
 ![alt text](figures/20_splenium.png	"20. Splenium of Corpus Callosum ")
   
 ## 21. R AL temporal horn = right anterolateral temporal horn
-  * Place using coronal view as anteriormost (and lateral) point of temporal horn; scroll back and forth to find the spot where the CSF is barely visible in the coronal view.
+  * Place using coronal view as the anterior-most (and lateral) point of temporal horn
   * Choose a more ventral/inferior point on the coronal view
   * Place at the boundary of CSF and brain
   
 ![alt text](figures/21_RALTH.png	"21. Right Anterolateral Temporal Horn")
   
-## 22. L AL temporal horn = left anterolateral temporal horn (as in 21)
+## 22. L AL temporal horn = left anterolateral temporal horn
+  * As in 21
 
 ![alt text](figures/22_LALTH.png	"22. Left Anterolateral Temporal Horn")
 
 ## 23. R superior AM temporal horn = Rhoton's R uncal recess
-  * At the superior hippocampal-amygdalar transition area (HATA); NOTE: there is also an inferior anteromedial temporal horn
-  * Rhoton's uncal recess: "narrow medially projecting space between hippocampal head & ventricular surface of amygdala located lateral to uncal apex")
+  * At the superior hippocampal-amygdalar transition area (HATA)
+  * NOTE: there is also an inferior anteromedial temporal horn
+  * Rhoton's uncal recess:
+    * "narrow medially projecting space between hippocampal head & ventricular surface of amygdala located lateral to uncal apex")
   * Place at the boundary of CSF and brain
   
 ![alt text](figures/23_RSAMTH.png	"23. R superior AM temporal horn")
   
-## 24. L superior AM temporal horn = Rhoton's L uncal recess (as in 23)
+## 24. L superior AM temporal horn = Rhoton's L uncal recess
+  * As in 23
 
 ![alt text](figures/24_LSAMTH.png	"24. L superior AM temporal horn")
 
@@ -174,7 +188,8 @@ Create a new Markup list entitled **Fid32_[VolumeID]_[Rater]_[N]**. Click on **A
   
 ![alt text](figures/25_RIAMTH.png	"25. R inferior AM temporal horn")
   
-## 26. L inferior AM temporal horn (as in 25)
+## 26. L inferior AM temporal horn
+  * Like in 25
   * Jump to 22 (left AL temporal horn) and scroll the find the most medial showing of the CSF
   
 ![alt text](figures/26_LIAMTH.png	"26. L inferior AM temporal horn")
@@ -185,18 +200,20 @@ Create a new Markup list entitled **Fid32_[VolumeID]_[Rater]_[N]**. Click on **A
   
 ![alt text](figures/27_RIGO.png	"27. R indusium griseum origin")
   
-## 28. L indusium griseum origin (as in 27)
+## 28. L indusium griseum origin
+  * As in 27
 
 ![alt text](figures/28_LIGO.png	"28. L indusium griseum origin")
 
 ## 29. R ventral occipital horn
-  * Defined on ventral/inferior portion of last visible coronal slice with occipital horn; if it is hard to see in the coronal view then you can make the first placement using the axial view (make sure the view is on the right side of the brain).
-  * Optimize using other views
+  * Defined on ventral/inferior portion of last visible coronal slice with occipital horn
+  * If it is hard to see on the coronal view then you can make the first placement using the axial view (make sure the view is on the right side of the brain).
   * Optimize using other views
   
 ![alt text](figures/29_RVOH.png	"29. R ventral occipital horn")
   
-## 30. L ventral occipital horn (as in 29)
+## 30. L ventral occipital horn
+  * As in 29
 
 ![alt text](figures/30_LVOH.png	"30. L ventral occipital horn")
 
@@ -206,7 +223,8 @@ Create a new Markup list entitled **Fid32_[VolumeID]_[Rater]_[N]**. Click on **A
 
 ![alt text](figures/31_ROSF.png	"31. R olfactory sulcal fundus")
   
-## 32. L olfactory sulcal fundus (as in 31)
+## 32. L olfactory sulcal fundus
+  * As in 31
 
 ![alt text](figures/32_LOSF.png	"32. L olfactory sulcal fundus")
 
