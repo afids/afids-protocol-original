@@ -11,10 +11,13 @@ An open framework for evaluating correspondence in brain images and teaching neu
 
 ## References and Resources
 
-### Publications
+### Preprint
+
+* Lau JC, Parrent AG, Demarco J, Gupta G, Park PJ, Ferko K, Khan AR, Peters TM. A framework for evaluating correspondence between brain images using anatomical fiducials. bioRxiv. 2018. [[ref](https://www.biorxiv.org/content/early/2018/11/03/460675)] 
+
+### Conference Abstracts
 
 * Lau JC, Parrent AG, Demarco J, Gupta G, Park PJ, Ferko K, Khan AR, Peters TM. AFIDs: an open framework for evaluating correspondence between magnetic resonance images of the human brain using fiducial placement. F1000 Research. Demo presented at INCF NeuroInformatics in Montreal, QC, Canada. 2018. [[ref](http://dx.doi.org/10.7490/f1000research.1115895.1)]
-* Preprint coming soon!
 
 ### Open Datasets
 * **Agile12v2016:** Lau JC, MacDougall KW, Arango MF, Peters TM, Parrent AG, Khan AR: Ultra-High Field Template-Assisted Target Selection for Deep Brain Stimulation Surgery. World Neurosurg 103:531–537, 2017. [[download](https://www.nitrc.org/projects/deepbrain7t/)] [[ref](http://dx.doi.org/10.1016/j.wneu.2017.04.043)]
