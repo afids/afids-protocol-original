@@ -1,0 +1,557 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>AFIDS Protocol &mdash; afids  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="References and Resources" href="refResources.html" />
+    <link rel="prev" title="Linear Transform in 3D Slicer" href="linearTransform.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> afids
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="savingScenes.html">Saving Slicer Scenes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linearTransform.html">Linear Transform in 3D Slicer</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">AFIDS Protocol</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#preparation">Preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#naming-scheme-for-fiducial-files">Naming Scheme for Fiducial Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#general-fiducial-placement-strategies">General Fiducial Placement Strategies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#placement-of-fiducial-series">Placement of Fiducial Series</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ac-midline">1. AC [midline]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pc-midline">2. PC [midline]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#infracollicular-sulcus-midline">3. infracollicular sulcus [midline]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pmj-pontomesencephalic-junction-midline">4. PMJ = pontomesencephalic junction [midline]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#superior-interpeduncular-fossa-midline">5. superior interpeduncular fossa [midline]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#r-superior-lms-right-superior-lateral-mesencephalic-sulcus">6. R superior LMS = right superior lateral mesencephalic sulcus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#l-superior-lms-left-superior-lateral-mesencephalic-sulcus">7. L superior LMS = left superior lateral mesencephalic sulcus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#r-inferior-lms-right-inferior-lateral-mesencephalic-sulcus">8. R inferior LMS = right inferior lateral mesencephalic sulcus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#l-inferior-lms-left-inferior-lateral-mesencephalic-sulcus">9. L inferior LMS = left inferior lateral mesencephalic sulcus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#culmen-midline">10. Culmen [midline]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#intermammillary-sulcus-midline">11. Intermammillary sulcus [midline]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#r-mb-right-mammillary-body">12. R MB = right mammillary body</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#l-mb-left-mamillary-body">13. L MB = left mamillary body</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pineal-gland-midline">14. pineal gland [midline]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#r-lv-at-ac-right-lateral-aspect-of-frontal-horn-on-coronal-section-of-ac">15. R LV at AC = right lateral aspect of frontal horn on coronal section of AC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#l-lv-at-ac-left-lateral-aspect-of-frontal-horn-on-coronal-section-of-ac">16. L LV at AC = left lateral aspect of frontal horn on coronal section of AC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#r-lv-at-pc-right-lateral-aspect-of-frontal-horn-on-coronal-section-of-pc">17. R LV at PC = right lateral aspect of frontal horn on coronal section of PC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#l-lv-at-pc-left-lateral-aspect-of-frontal-horn-on-coronal-section-of-pc">18. L LV at PC = left lateral aspect of frontal horn on coronal section of PC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#genu-of-cc-genu-of-corpus-callosum-midline">19. Genu of CC = genu of corpus callosum [midline]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#splenium-of-cc-splenium-of-the-corpus-callosum-midline">20. Splenium of CC = splenium of the corpus callosum [midline]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#r-al-temporal-horn-right-anterolateral-temporal-horn">21. R AL temporal horn = right anterolateral temporal horn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#l-al-temporal-horn-left-anterolateral-temporal-horn">22. L AL temporal horn = left anterolateral temporal horn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#r-superior-am-temporal-horn-rhoton-s-r-uncal-recess">23. R superior AM temporal horn = Rhoton’s R uncal recess</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#l-superior-am-temporal-horn-rhoton-s-l-uncal-recess">24. L superior AM temporal horn = Rhoton’s L uncal recess</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#r-inferior-am-temporal-horn">25. R inferior AM temporal horn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#l-inferior-am-temporal-horn">26. L inferior AM temporal horn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#r-indusium-griseum-origin">27. R indusium griseum origin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#l-indusium-griseum-origin">28. L indusium griseum origin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#r-ventral-occipital-horn">29. R ventral occipital horn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#l-ventral-occipital-horn">30. L ventral occipital horn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#r-olfactory-sulcal-fundus">31. R olfactory sulcal fundus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#l-olfactory-sulcal-fundus">32. L olfactory sulcal fundus</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="refResources.html">References and Resources</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">afids</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>AFIDS Protocol</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/AFIDSprotocol.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="afids-protocol">
+<h1>AFIDS Protocol<a class="headerlink" href="#afids-protocol" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="preparation">
+<h2>Preparation<a class="headerlink" href="#preparation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Download and use Slicer 4.8.1 (<a class="reference external" href="http://slicer.kitware.com/midas3/folder/4989">http://slicer.kitware.com/midas3/folder/4989</a>)</li>
+</ul>
+</div>
+<div class="section" id="naming-scheme-for-fiducial-files">
+<h2>Naming Scheme for Fiducial Files<a class="headerlink" href="#naming-scheme-for-fiducial-files" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>[VolumeID]_[Contrast]_[Rater]_[N] (e.g. MNI2009b_T1_JL_1_20170511.fcsv)<ul>
+<li><strong>[VolumeID]</strong> = the identifier for the volume on which you are performing the fiducial placements; for the tutorial it will be one of the well known MRI templates:
+* Colin27: average of 27 Colin brains
+* MNI2009b: average of 152 healthy controls
+* Agile12v1.0: average of 12 healthy controls at 7T</li>
+<li><strong>[Contrast]</strong> = T1, T2, PD, other (typically will be T1)</li>
+<li><strong>[Rater]</strong> = the unique identifier for the rater performing the fiducial placement; convention will be first initial and last name to prevent overlap</li>
+<li><strong>[N]</strong> = reference for fiducial placement session (helpful if performing placements more than once; starting with 1)</li>
+<li><strong>[YYYYMMDD]</strong> = year month and date</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="general-fiducial-placement-strategies">
+<h2>General Fiducial Placement Strategies<a class="headerlink" href="#general-fiducial-placement-strategies" title="Permalink to this headline">¶</a></h2>
+<p>Use the <strong>“Jump to Slice”</strong> feature to center your view on the fiducial of interest and ensure that the placed landmark appears accurate
+on all three standard views (axial, sagittal, coronal). Once a fiducial is placed, <strong>dragging</strong> the fiducial can allow for more refined
+placement. Holding down <strong>shift</strong> centers the view in all views on the cursor (use along with crosshair function). If a given fiducial
+is classified as <strong>[midline]</strong>, jump to an existing midline fiducial (e.g. AC or PC) and start by placing the fiducial on the
+<strong>sagittal</strong> view and refine placement using the other views. Try to place fiducials at the <strong>boundary/edge</strong> of the feature of
+interest. For some of the fiducials, the instructions for placement will explicitly say to place the landmark using information mostly
+from one view (e.g. axial view for olfactory sulcus). Be aware that changing the windowing of your images (and lighting in the room) may
+affect your perception of where landmarks should be placed. When you’re satisfied with the location of a fiducial, <strong>lock it in place</strong>
+to prevent yourself from displacing it later. <strong>NOTE: there is no UNDO feature for fiducial placements.</strong></p>
+</div>
+<div class="section" id="placement-of-fiducial-series">
+<h2>Placement of Fiducial Series<a class="headerlink" href="#placement-of-fiducial-series" title="Permalink to this headline">¶</a></h2>
+<p>Create a new Markup list entitled <strong>Fid32_[VolumeID]_[Rater]_[N]</strong>. Click on <strong>ACPC Line</strong> and copy over AC and PC to your new list by
+right clicking each fiducial, choosing “Copy fiducial to another list”, and selecting <strong>Fid32_[VolumeID]_[Rater]_[N]</strong>. Place the
+following <strong>30 fiducials</strong>, enter the number corresponding to the fiducial in the Name textbox and enter the underlined anatomical
+structure in the corresponding Description textbox:</p>
+<div class="section" id="ac-midline">
+<h3>1. AC [midline]<a class="headerlink" href="#ac-midline" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Place at the center of the commissure</li>
+</ul>
+<img alt="01. Anterior Commissure" class="align-center" src="_images/01_AC.png" />
+</div>
+<div class="section" id="pc-midline">
+<h3>2. PC [midline]<a class="headerlink" href="#pc-midline" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Place at the center of the commissure</li>
+</ul>
+<img alt="02. Posterior Commissure" class="align-center" src="_images/02_PC.png" />
+</div>
+<div class="section" id="infracollicular-sulcus-midline">
+<h3>3. infracollicular sulcus [midline]<a class="headerlink" href="#infracollicular-sulcus-midline" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Inferior part of sulcus of inferior colliculi at the midline junction of inferior colliculi</li>
+<li>Inferior most boundary of longitudinal intercollicular sulcus</li>
+</ul>
+<img alt="03. Infracollicular Sulcus" class="align-center" src="_images/03_InfracollicularSulcus.png" />
+</div>
+<div class="section" id="pmj-pontomesencephalic-junction-midline">
+<h3>4. PMJ = pontomesencephalic junction [midline]<a class="headerlink" href="#pmj-pontomesencephalic-junction-midline" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>At the junction but because the junction tapers off gradually, choose the ventral/inferior/pontine side of the junction using the sagittal and coronal views</li>
+</ul>
+<img alt="04. Pontomesencephalic Junction" class="align-center" src="_images/04_PMJ.png" />
+</div>
+<div class="section" id="superior-interpeduncular-fossa-midline">
+<h3>5. superior interpeduncular fossa [midline]<a class="headerlink" href="#superior-interpeduncular-fossa-midline" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Most superior axial slice showing the interpeduncular fossa</li>
+<li>Use coronal slice to help optimize location at boundary of 3rd ventricle and surrounding brain</li>
+<li>Commentary: useful fiducial location for DBS since subthalamic nucleus close by</li>
+</ul>
+<img alt="05. Superior Interpeduncular Fossa" class="align-center" src="_images/05_SIPF.png" />
+</div>
+<div class="section" id="r-superior-lms-right-superior-lateral-mesencephalic-sulcus">
+<h3>6. R superior LMS = right superior lateral mesencephalic sulcus<a class="headerlink" href="#r-superior-lms-right-superior-lateral-mesencephalic-sulcus" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Localize using axial slices; at boundary of CSF and brain</li>
+<li>Use the coronal and sagittal views to optimize the location so that this point is in the angle created in all views</li>
+</ul>
+<img alt="06. Right Superior Lateral Mesencephalic Sulcus" class="align-center" src="_images/06_RSLMS.png" />
+</div>
+<div class="section" id="l-superior-lms-left-superior-lateral-mesencephalic-sulcus">
+<h3>7. L superior LMS = left superior lateral mesencephalic sulcus<a class="headerlink" href="#l-superior-lms-left-superior-lateral-mesencephalic-sulcus" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>As in 6</li>
+</ul>
+<img alt="07. Left Superior Lateral Mesencephalic Sulcus" class="align-center" src="_images/07_LSLMS.png" />
+</div>
+<div class="section" id="r-inferior-lms-right-inferior-lateral-mesencephalic-sulcus">
+<h3>8. R inferior LMS = right inferior lateral mesencephalic sulcus<a class="headerlink" href="#r-inferior-lms-right-inferior-lateral-mesencephalic-sulcus" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Localize at junction between midbrain and pons first using axial slices</li>
+<li>Refine positioning using sagittal view (at the change in angle of brainstem at the PMJ)</li>
+</ul>
+<img alt="08. Right Inferior Lateral Mesencephalic Sulcus" class="align-center" src="_images/08_RILMS.png" />
+</div>
+<div class="section" id="l-inferior-lms-left-inferior-lateral-mesencephalic-sulcus">
+<h3>9. L inferior LMS = left inferior lateral mesencephalic sulcus<a class="headerlink" href="#l-inferior-lms-left-inferior-lateral-mesencephalic-sulcus" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>As in 8</li>
+</ul>
+<img alt="09. Left Inferior Lateral Mesencephalic Sulcus" class="align-center" src="_images/09_LILMS.png" />
+</div>
+<div class="section" id="culmen-midline">
+<h3>10. Culmen [midline]<a class="headerlink" href="#culmen-midline" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Jump to AC or another midline AFID to get to the mid-sagittal slice, then place using the sagittal view</li>
+<li>Most superior point of cerebellar vermis; one of the vermian lobules</li>
+</ul>
+<img alt="10. Culmen" class="align-center" src="_images/10_culmen.png" />
+</div>
+<div class="section" id="intermammillary-sulcus-midline">
+<h3>11. Intermammillary sulcus [midline]<a class="headerlink" href="#intermammillary-sulcus-midline" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Click to jump to AC landmark and place using the sagittal view</li>
+<li>Midpoint between the mamillary bodies; remember to place at the border of the grey matter</li>
+</ul>
+<img alt="11. Intermammillary sulcus" class="align-center" src="_images/11_IMS.png" />
+</div>
+<div class="section" id="r-mb-right-mammillary-body">
+<h3>12. R MB = right mammillary body<a class="headerlink" href="#r-mb-right-mammillary-body" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Place at the center of the mammillary body</li>
+</ul>
+<img alt="12. Right Mammillary body" class="align-center" src="_images/12_RMB.png" />
+</div>
+<div class="section" id="l-mb-left-mamillary-body">
+<h3>13. L MB = left mamillary body<a class="headerlink" href="#l-mb-left-mamillary-body" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>As in 12</li>
+</ul>
+<img alt="13. Left Mammillary body" class="align-center" src="_images/13_LMB.png" />
+</div>
+<div class="section" id="pineal-gland-midline">
+<h3>14. pineal gland [midline]<a class="headerlink" href="#pineal-gland-midline" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Click to jump to the AC landmark on the sagittal view and place AFID in the middle of gland (use all views to correctly place this point)</li>
+<li>Occasionally the pineal gland is calcified, which makes it more difficult to find the center of the gland. Be sure to scroll back and forth in all views to find the true center point regardless of asymmetry of calcifications</li>
+</ul>
+<img alt="14. Pineal Gland" class="align-center" src="_images/14_PG.png" />
+</div>
+<div class="section" id="r-lv-at-ac-right-lateral-aspect-of-frontal-horn-on-coronal-section-of-ac">
+<h3>15. R LV at AC = right lateral aspect of frontal horn on coronal section of AC<a class="headerlink" href="#r-lv-at-ac-right-lateral-aspect-of-frontal-horn-on-coronal-section-of-ac" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Defined at same coronal slice as AC (jump to it)</li>
+</ul>
+<img alt="15. Right Lateral Aspect of Frontal Horn on Coronal Section of AC" class="align-center" src="_images/15_RLVAC.png" />
+</div>
+<div class="section" id="l-lv-at-ac-left-lateral-aspect-of-frontal-horn-on-coronal-section-of-ac">
+<h3>16. L LV at AC = left lateral aspect of frontal horn on coronal section of AC<a class="headerlink" href="#l-lv-at-ac-left-lateral-aspect-of-frontal-horn-on-coronal-section-of-ac" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>As in 15</li>
+</ul>
+<img alt="16. Left Lateral Aspect of Frontal Horn on Coronal Section of AC" class="align-center" src="_images/16_LLVAC.png" />
+</div>
+<div class="section" id="r-lv-at-pc-right-lateral-aspect-of-frontal-horn-on-coronal-section-of-pc">
+<h3>17. R LV at PC = right lateral aspect of frontal horn on coronal section of PC<a class="headerlink" href="#r-lv-at-pc-right-lateral-aspect-of-frontal-horn-on-coronal-section-of-pc" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Defined at same coronal slice as PC (jump to it)</li>
+</ul>
+<img alt="17. Right Lateral Aspect of Frontal Horn on Coronal Section of PC" class="align-center" src="_images/17_RLVPC.png" />
+</div>
+<div class="section" id="l-lv-at-pc-left-lateral-aspect-of-frontal-horn-on-coronal-section-of-pc">
+<h3>18. L LV at PC = left lateral aspect of frontal horn on coronal section of PC<a class="headerlink" href="#l-lv-at-pc-left-lateral-aspect-of-frontal-horn-on-coronal-section-of-pc" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>As in 17</li>
+</ul>
+<img alt="18. Left Lateral Aspect of Frontal Horn on Coronal Section of PC" class="align-center" src="_images/18_LLVPC.png" />
+</div>
+<div class="section" id="genu-of-cc-genu-of-corpus-callosum-midline">
+<h3>19. Genu of CC = genu of corpus callosum [midline]<a class="headerlink" href="#genu-of-cc-genu-of-corpus-callosum-midline" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Jump to AC and place using sagittal view</li>
+<li>Optimize using coronal view as most anterior point of the corpus callosum on coronal slice</li>
+</ul>
+<img alt="19. Genu of Corpus Callosum" class="align-center" src="_images/19_Genu.png" />
+</div>
+<div class="section" id="splenium-of-cc-splenium-of-the-corpus-callosum-midline">
+<h3>20. Splenium of CC = splenium of the corpus callosum [midline]<a class="headerlink" href="#splenium-of-cc-splenium-of-the-corpus-callosum-midline" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Jump to AC and place using sagittal view.</li>
+<li>Optimize using axial view as the inferior-most point on axial section</li>
+</ul>
+<img alt="20. Splenium of Corpus Callosum" class="align-center" src="_images/20_splenium.png" />
+</div>
+<div class="section" id="r-al-temporal-horn-right-anterolateral-temporal-horn">
+<h3>21. R AL temporal horn = right anterolateral temporal horn<a class="headerlink" href="#r-al-temporal-horn-right-anterolateral-temporal-horn" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Place using coronal view as the anterior-most (and lateral) point of temporal horn</li>
+<li>Choose a more ventral/inferior point on the coronal view</li>
+<li>Place at the boundary of CSF and brain</li>
+</ul>
+<img alt="21. Right Anterolateral Temporal Horn" class="align-center" src="_images/21_RALTH.png" />
+</div>
+<div class="section" id="l-al-temporal-horn-left-anterolateral-temporal-horn">
+<h3>22. L AL temporal horn = left anterolateral temporal horn<a class="headerlink" href="#l-al-temporal-horn-left-anterolateral-temporal-horn" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>As in 21</li>
+</ul>
+<img alt="22. Left Anterolateral Temporal Horn" class="align-center" src="_images/22_LALTH.png" />
+</div>
+<div class="section" id="r-superior-am-temporal-horn-rhoton-s-r-uncal-recess">
+<h3>23. R superior AM temporal horn = Rhoton’s R uncal recess<a class="headerlink" href="#r-superior-am-temporal-horn-rhoton-s-r-uncal-recess" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>At the superior hippocampal-amygdalar transition area (HATA)</li>
+<li>NOTE: there is also an inferior anteromedial temporal horn</li>
+<li><dl class="first docutils">
+<dt>Rhoton’s uncal recess:</dt>
+<dd><ul class="first last">
+<li>“narrow medially projecting space between hippocampal head &amp; ventricular surface of amygdala located lateral to uncal apex”)</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>Place at the boundary of CSF and brain</li>
+</ul>
+<img alt="23. R superior AM temporal horn" class="align-center" src="_images/23_RSAMTH.png" />
+</div>
+<div class="section" id="l-superior-am-temporal-horn-rhoton-s-l-uncal-recess">
+<h3>24. L superior AM temporal horn = Rhoton’s L uncal recess<a class="headerlink" href="#l-superior-am-temporal-horn-rhoton-s-l-uncal-recess" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>As in 23</li>
+</ul>
+<img alt="24. L superior AM temporal horn" class="align-center" src="_images/24_LSAMTH.png" />
+</div>
+<div class="section" id="r-inferior-am-temporal-horn">
+<h3>25. R inferior AM temporal horn<a class="headerlink" href="#r-inferior-am-temporal-horn" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Initially place using coronal view</li>
+<li>Jump to 21 (right AL temporal horn) and scroll to find the most medial (and anterior) showing of the CSF</li>
+<li>Optimize using the axial view again to find the most anteromedial showing of the CSF</li>
+</ul>
+<img alt="25. R inferior AM temporal horn" class="align-center" src="_images/25_RIAMTH.png" />
+</div>
+<div class="section" id="l-inferior-am-temporal-horn">
+<h3>26. L inferior AM temporal horn<a class="headerlink" href="#l-inferior-am-temporal-horn" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Like in 25</li>
+<li>Jump to 22 (left AL temporal horn) and scroll the find the most medial showing of the CSF</li>
+</ul>
+<img alt="26. L inferior AM temporal horn" class="align-center" src="_images/26_LIAMTH.png" />
+</div>
+<div class="section" id="r-indusium-griseum-origin">
+<h3>27. R indusium griseum origin<a class="headerlink" href="#r-indusium-griseum-origin" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Defined on sagittal slice at takeoff from posterior hippocampus below splenium</li>
+<li>Begin on the sagittal view (make sure the view is on the right side), scroll back and forrth to find the point where the tail of the hippocampus begins to become pointed and “takeoff”</li>
+</ul>
+<img alt="27. R indusium griseum origin" class="align-center" src="_images/27_RIGO.png" />
+</div>
+<div class="section" id="l-indusium-griseum-origin">
+<h3>28. L indusium griseum origin<a class="headerlink" href="#l-indusium-griseum-origin" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>As in 27</li>
+</ul>
+<img alt="28. L indusium griseum origin" class="align-center" src="_images/28_LIGO.png" />
+</div>
+<div class="section" id="r-ventral-occipital-horn">
+<h3>29. R ventral occipital horn<a class="headerlink" href="#r-ventral-occipital-horn" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Defined on ventral/inferior portion of last visible coronal slice with occipital horn</li>
+<li>If it is hard to see on the coronal view then you can make the first placement using the axial view (make sure the view is on the right side of the brain).</li>
+<li>Optimize using other views</li>
+</ul>
+<img alt="29. R ventral occipital horn" class="align-center" src="_images/29_RVOH.png" />
+</div>
+<div class="section" id="l-ventral-occipital-horn">
+<h3>30. L ventral occipital horn<a class="headerlink" href="#l-ventral-occipital-horn" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>As in 29</li>
+</ul>
+<img alt="30. L ventral occipital horn" class="align-center" src="_images/30_LVOH.png" />
+</div>
+<div class="section" id="r-olfactory-sulcal-fundus">
+<h3>31. R olfactory sulcal fundus<a class="headerlink" href="#r-olfactory-sulcal-fundus" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Sulcal fundus = at depth of sulcus and boundary of gray matter-white matter</li>
+<li>Posterior and most superior portion visible on axial slice</li>
+</ul>
+<img alt="31. R olfactory sulcal fundus" class="align-center" src="_images/31_ROSF.png" />
+</div>
+<div class="section" id="l-olfactory-sulcal-fundus">
+<h3>32. L olfactory sulcal fundus<a class="headerlink" href="#l-olfactory-sulcal-fundus" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>As in 31</li>
+</ul>
+<img alt="32. L olfactory sulcal fundus" class="align-center" src="_images/32_LOSF.png" />
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="refResources.html" class="btn btn-neutral float-right" title="References and Resources" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="linearTransform.html" class="btn btn-neutral" title="Linear Transform in 3D Slicer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Jon Lau
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

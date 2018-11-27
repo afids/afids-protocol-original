@@ -1,0 +1,252 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Saving Slicer Scenes &mdash; afids  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Linear Transform in 3D Slicer" href="linearTransform.html" />
+    <link rel="prev" title="Welcome to AFIDS documentation!" href="index.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> afids
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Saving Slicer Scenes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linearTransform.html">Linear Transform in 3D Slicer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AFIDSprotocol.html">AFIDS Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="refResources.html">References and Resources</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">afids</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Saving Slicer Scenes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/savingScenes.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="saving-slicer-scenes">
+<h1>Saving Slicer Scenes<a class="headerlink" href="#saving-slicer-scenes" title="Permalink to this headline">¶</a></h1>
+<ol class="arabic simple">
+<li>Click on the <strong>‘File’</strong> menu at the top.</li>
+</ol>
+<img alt="_images/fileMenu.png" class="align-center" src="_images/fileMenu.png" />
+<ol class="arabic simple" start="2">
+<li>Choose <strong>‘Save’</strong>, the dialog box shwon below will appear.</li>
+</ol>
+<img alt="_images/saveMenu.png" class="align-center" src="_images/saveMenu.png" />
+<ol class="arabic simple" start="3">
+<li>If this is your first time saving you will have to define the directory to save the files in. Click on <strong>‘Change directory for selected files’</strong>. The dialog box below will appear</li>
+</ol>
+<img alt="_images/saveDir.png" class="align-center" src="_images/saveDir.png" />
+<ol class="arabic simple" start="4">
+<li>Find the directory where you want to save the data, create a new folder called <strong>‘scene’</strong> and then double click on it so you are now within the folder. Select <strong>‘Choose’</strong>.</li>
+<li>You will now notice that the .nii file is deselected and is in the original directory location. All the other files you will be saving are in the newly created <strong>‘scene’</strong> folder. Click <strong>‘Save’</strong>.</li>
+</ol>
+<img alt="_images/saveDir2.png" class="align-center" src="_images/saveDir2.png" />
+<ol class="arabic simple" start="6">
+<li>If this not your first time saving you will see two warning messages. The first will notify you that the <strong>.mrml</strong> file already exists and ask if you want to replace it. Click <strong>‘OK’</strong>.</li>
+</ol>
+<img alt="_images/mrmlSave.png" class="align-center" src="_images/mrmlSave.png" />
+<ol class="arabic simple" start="7">
+<li>A second warning message will appear letting you know that the <strong>.fcsv</strong> file already exists and ask if you would like to replace it. Click <strong>‘Yes to All’</strong>. This will overwrite your old datafiles with the newer ones.</li>
+</ol>
+<img alt="_images/fcsvSave.png" class="align-center" src="_images/fcsvSave.png" />
+<ol class="arabic simple" start="8">
+<li>To close the current scene, before opening a new patient, click the ‘File’ menu and select ‘Close Scene’.</li>
+</ol>
+<img alt="_images/closeScene.png" class="align-center" src="_images/closeScene.png" />
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="linearTransform.html" class="btn btn-neutral float-right" title="Linear Transform in 3D Slicer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Welcome to AFIDS documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Jon Lau
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
