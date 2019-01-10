@@ -232,4 +232,4 @@ Save the fiducial file (.fcsv) locally.
 
 ## Resources:
 * Tutorial given as part of Brainhack Western 2018: https://www.youtube.com/watch?v=huGtd19_uiM
-* Git repository for BHG18 tutorial results: https://github.com/jclauneuro/BHG18_landmarkprotocol/
+
