@@ -36,5 +36,5 @@ An open framework for evaluating correspondence in brain images and teaching neu
 * [Website](https://github.com/jclauneuro/BHG18_afidprotocol) for the AFID protocol as taught as a training workshop for BHG18
 * [Tutorial](https://github.com/BrainhackWestern/BrainhackWestern.github.io/wiki/Tutorials) given as part of BHG18 [[video](https://www.youtube.com/watch?v=huGtd19_uiM)]
 * Download [Slicer](https://www.slicer.org)
-* [AFID validator](http://fidvalidator.pythonanywhere.com/vib1) (alpha stage); started at [BHG18-Western](https://github.com/BrainhackWestern/BrainhackWestern.github.io/wiki/projects#landmark-validator)
+* [AFID validator](http://fidvalidator.pythonanywhere.com) (alpha stage); started at [BHG18-Western](https://github.com/BrainhackWestern/BrainhackWestern.github.io/wiki/projects#landmark-validator)
 * [Scicrunch (RRID:SCR_016623)](https://scicrunch.org/scicrunch/Resources/record/nlx_144509-1/SCR_016623/resolver)
