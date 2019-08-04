@@ -64,7 +64,7 @@ right clicking each fiducial, choosing "Copy fiducial to another list", and sele
 following **30 fiducials**, enter the number corresponding to the fiducial in the Name textbox and enter the underlined anatomical 
 structure in the corresponding Description textbox:
 
-When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[N]** markup list. Click on **midline** and copy over AC, PC along with the other points to your FID32 list by selecting all fiducials, right click and choosing "Copy”. Select **Fid32_[VolumeID]_[Rater]_[N]**. Place each of the **fiducials** in the markups list entering the associated fiducial number in **Name** and enter the __underlined__ name in the **Description textbox**.
+When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[N]** markup list. Click on **midline** and copy over AC, PC along with the other points to your FID32 list by selecting all fiducials, right click and choosing "Copy”. Select **Fid32_[VolumeID]_[Rater]_[N]**. Place each of the **fiducials** in the markups list entering the associated fiducial number in **Name** and enter the **underlined** name in the **Description textbox**.
 
 1. AC [midline]
 ###############
