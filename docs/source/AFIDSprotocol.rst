@@ -4,7 +4,7 @@ AFIDS Protocol
 
 Preparation
 -----------
-* Download and use Slicer 4.8.1 (http://slicer.kitware.com/midas3/folder/4989)
+* Download and use [Slicer 4.10.2](https://download.slicer.org/)
 
 Naming Scheme for Fiducial Files
 --------------------------------
@@ -18,6 +18,31 @@ Naming Scheme for Fiducial Files
   * **[Rater]** = the unique identifier for the rater performing the fiducial placement; convention will be first initial and last name to prevent overlap
   * **[N]** = reference for fiducial placement session (helpful if performing placements more than once; starting with 1)
   * **[YYYYMMDD]** = year month and date
+
+AC-PC Placement
+---------------
+Download assigned volume/template from github repository.
+Go to Markups Module and create Module named **ACPC_[VolumeID]_[Rater]_[N]**. Place **AC** and **PC** landmarks:
+1. AC = anterior commissure (center)
+2. PC = posterior commissure (center)
+
+Create new AC-PC transform
+--------------------------
+Create a new Markup list entitled Fid32_[VolumeID]_[Rater]_[N].
+Create a new Markup list entitled midline.
+
+To create a new AC-PC Transform you must place AC and PC fiducial markers in previous step. 
+1. Copy AC and PC markers from ACPC to the midline list.
+2. Go back to the midline list and place a fiducial marker in the infracollicular sulcus (point 3)
+3. Place another fiducial marker at the Genu of CC (point 19)
+4. You should now have AC and PC in the ACPC markups list and AC, PC, infracollicular sulcus and Genu of CC in the midline list
+5. Under modules select Registration  Specialized  ACPC Transform. 
+6. In the Transform Panel, under ACPC Line select the ACPC markups list, under Midline select the midline list, and under Output transform select Create new linear transform as… and name it Output transform
+7. Click apply at the bottom of the window
+8. Next under modules go to Data. Beside the image volume select the ‘eye’ icon to turn the volume back on.
+9. Next under Modules go to Transforms and under Active Transform dropdown tab select the create Output transform (if not already selected). 
+10. Under Apply Transform select all 4 items (i.e MNI2009b_T1w_GGl_20190801, ACPC, Midline and FID32) and transfer them to the transformed side. 
+
 
 General Fiducial Placement Strategies
 -------------------------------------
@@ -38,6 +63,8 @@ Create a new Markup list entitled **Fid32_[VolumeID]_[Rater]_[N]**. Click on **A
 right clicking each fiducial, choosing "Copy fiducial to another list", and selecting **Fid32_[VolumeID]_[Rater]_[N]**. Place the 
 following **30 fiducials**, enter the number corresponding to the fiducial in the Name textbox and enter the underlined anatomical 
 structure in the corresponding Description textbox:
+
+When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[N]** markup list. Click on **midline** and copy over AC, PC along with the other points to your FID32 list by selecting all fiducials, right click and choosing "Copy”. Select **Fid32_[VolumeID]_[Rater]_[N]**. Place each of the **fiducials** in the markups list entering the associated fiducial number in **Name** and enter the underlined_ name_ in the **Description textbox**.
 
 1. AC [midline]
 ###############
