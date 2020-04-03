@@ -12,7 +12,7 @@ Documentation: https://afids.readthedocs.io/en/latest/
 
 ## Introduction
 
-* The [AFID protocol](protocol.md) is an anatomical fiducial placement protocol that has been validated and used for teaching at a number of local and [BHG-related events](https://github.com/jclauneuro/BHG18_landmarkprotocol)
+* The [AFID protocol](protocol.md) is an anatomical fiducial placement protocol that has been validated and used for teaching at a number of local and BHG-related events including https://github.com/BrainhackWestern/BrainhackWestern.github.io/wiki/Tutorials.
 * AFID placement is reproducible, not overtly manually intensive (20-40 minutes once trained), and more sensitive to local registration errors than standard voxel overlap measures.
 * This protocol and study framework leverages open resources and tools, and has been developed with full transparency in mind so that others may freely use, adopt, and modify.
 * 60+ raters trained to date.
