@@ -1,7 +1,7 @@
 # Fiducial Protocol
 
 ## Preparation
-* Download and use Slicer 4.8.1
+* Download and use 3D Slicer 4.10.2 (for the time being DO NOT use version 4.11 or above)
 
 ## Naming Scheme for Fiducial Files
 * [VolumeID]_[Contrast]_[Rater]_[N] (e.g. MNI2009b_T1_JL_1_20170511.fcsv)
