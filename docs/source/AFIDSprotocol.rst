@@ -4,7 +4,7 @@ AFIDS Protocol
 
 Preparation
 -----------
-* Download and use [Slicer 4.10.2](https://download.slicer.org/)
+* Download and use [3D Slicer 4.10.2](https://download.slicer.org/) (for the time being **DO NOT** use version 4.11 or above)
 
 Naming Scheme for Fiducial Files
 --------------------------------
@@ -70,7 +70,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 ###############
 * Place at the center of the commissure
 
-.. image:: images/01_AC.png
+.. image:: ../../figures/01_AC.png
 	:align: center
 	:alt: 01. Anterior Commissure
 
@@ -78,7 +78,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 ###############
 * Place at the center of the commissure
 
-.. image:: images/02_PC.png
+.. image:: ../../figures/02_PC.png
 	:align: center
 	:alt: 02. Posterior Commissure
 
@@ -87,7 +87,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 * Inferior part of sulcus of inferior colliculi at the midline junction of inferior colliculi
 * Inferior most boundary of longitudinal intercollicular sulcus
 
-.. image:: images/03_InfracollicularSulcus.png
+.. image:: ../../figures/03_InfracollicularSulcus.png
 	:align: center
 	:alt: 03. Infracollicular Sulcus
 
@@ -95,7 +95,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 ##############################################
 * At the junction but because the junction tapers off gradually, choose the ventral/inferior/pontine side of the junction using the sagittal and coronal views
 
-.. image:: images/04_PMJ.png
+.. image:: ../../figures/04_PMJ.png
 	:align: center
 	:alt: 04. Pontomesencephalic Junction
 
@@ -105,7 +105,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 * Use coronal slice to help optimize location at boundary of 3rd ventricle and surrounding brain
 * Commentary: useful fiducial location for DBS since subthalamic nucleus close by
 
-.. image:: images/05_SIPF.png
+.. image:: ../../figures/05_SIPF.png
 	:align: center
 	:alt: 05. Superior Interpeduncular Fossa
 	
@@ -115,7 +115,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 * Localize using axial slices; at boundary of CSF and brain
 * Use the coronal and sagittal views to optimize the location so that this point is in the angle created in all views
 
-.. image:: images/06_RSLMS.png
+.. image:: ../../figures/06_RSLMS.png
 	:align: center
 	:alt: 06. Right Superior Lateral Mesencephalic Sulcus
 	  
@@ -124,7 +124,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 
 * As in 6
 
-.. image:: images/07_LSLMS.png
+.. image:: ../../figures/07_LSLMS.png
 	:align: center
 	:alt: 07. Left Superior Lateral Mesencephalic Sulcus
 
@@ -134,7 +134,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 * Localize at junction between midbrain and pons first using axial slices
 * Refine positioning using sagittal view (at the change in angle of brainstem at the PMJ)
 
-.. image:: images/08_RILMS.png
+.. image:: ../../figures/08_RILMS.png
 	:align: center
 	:alt: 08. Right Inferior Lateral Mesencephalic Sulcus
   
@@ -143,7 +143,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 
 * As in 8
 
-.. image:: images/09_LILMS.png
+.. image:: ../../figures/09_LILMS.png
 	:align: center
 	:alt: 09. Left Inferior Lateral Mesencephalic Sulcus
 	
@@ -153,7 +153,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 * Jump to AC or another midline AFID to get to the mid-sagittal slice, then place using the sagittal view
 * Most superior point of cerebellar vermis; one of the vermian lobules
 
-.. image:: images/10_culmen.png
+.. image:: ../../figures/10_culmen.png
 	:align: center
 	:alt: 10. Culmen
 	  
@@ -163,7 +163,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 * Click to jump to AC landmark and place using the sagittal view 
 * Midpoint between the mamillary bodies; remember to place at the border of the grey matter
 
-.. image:: images/11_IMS.png
+.. image:: ../../figures/11_IMS.png
 	:align: center
 	:alt: 11. Intermammillary sulcus
   
@@ -172,7 +172,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 
 * Place at the center of the mammillary body
 
-.. image:: images/12_RMB.png
+.. image:: ../../figures/12_RMB.png
 	:align: center
 	:alt: 12. Right Mammillary body
 	
@@ -181,7 +181,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 
 * As in 12
 
-.. image:: images/13_LMB.png
+.. image:: ../../figures/13_LMB.png
 	:align: center
 	:alt: 13. Left Mammillary body
 	
@@ -191,7 +191,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 * Click to jump to the AC landmark on the sagittal view and place AFID in the middle of gland (use all views to correctly place this point)
 * Occasionally the pineal gland is calcified, which makes it more difficult to find the center of the gland. Be sure to scroll back and forth in all views to find the true center point regardless of asymmetry of calcifications
 
-.. image:: images/14_PG.png
+.. image:: ../../figures/14_PG.png
 	:align: center
 	:alt: 14. Pineal Gland
 	
@@ -200,7 +200,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 
 * Defined at same coronal slice as AC (jump to it)
 
-.. image:: images/15_RLVAC.png
+.. image:: ../../figures/15_RLVAC.png
 	:align: center
 	:alt: 15. Right Lateral Aspect of Frontal Horn on Coronal Section of AC
   
@@ -209,7 +209,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 
 * As in 15
 
-.. image:: images/16_LLVAC.png
+.. image:: ../../figures/16_LLVAC.png
 	:align: center
 	:alt: 16. Left Lateral Aspect of Frontal Horn on Coronal Section of AC
 
@@ -218,7 +218,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 
 * Defined at same coronal slice as PC (jump to it)
 
-.. image:: images/17_RLVPC.png
+.. image:: ../../figures/17_RLVPC.png
 	:align: center
 	:alt: 17. Right Lateral Aspect of Frontal Horn on Coronal Section of PC
 
@@ -227,7 +227,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 
 * As in 17
 
-.. image:: images/18_LLVPC.png
+.. image:: ../../figures/18_LLVPC.png
 	:align: center
 	:alt: 18. Left Lateral Aspect of Frontal Horn on Coronal Section of PC
 
@@ -237,7 +237,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 * Jump to AC and place using sagittal view
 * Optimize using coronal view as most anterior point of the corpus callosum on coronal slice
 
-.. image:: images/19_Genu.png
+.. image:: ../../figures/19_Genu.png
 	:align: center
 	:alt: 19. Genu of Corpus Callosum
  
@@ -247,7 +247,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 * Jump to AC and place using sagittal view.
 * Optimize using axial view as the inferior-most point on axial section
 
-.. image:: images/20_splenium.png
+.. image:: ../../figures/20_splenium.png
 	:align: center
 	:alt: 20. Splenium of Corpus Callosum
   
@@ -258,7 +258,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 * Choose a more ventral/inferior point on the coronal view
 * Place at the boundary of CSF and brain
 
-.. image:: images/21_RALTH.png
+.. image:: ../../figures/21_RALTH.png
 	:align: center
 	:alt: 21. Right Anterolateral Temporal Horn
   
@@ -267,7 +267,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 
 * As in 21
 
-.. image:: images/22_LALTH.png
+.. image:: ../../figures/22_LALTH.png
 	:align: center
 	:alt: 22. Left Anterolateral Temporal Horn
 	
@@ -280,7 +280,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 	* "narrow medially projecting space between hippocampal head & ventricular surface of amygdala located lateral to uncal apex")
 * Place at the boundary of CSF and brain
 
-.. image:: images/23_RSAMTH.png
+.. image:: ../../figures/23_RSAMTH.png
 	:align: center
 	:alt: 23. R superior AM temporal horn
 	  
@@ -289,7 +289,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 
 * As in 23
 
-.. image:: images/24_LSAMTH.png
+.. image:: ../../figures/24_LSAMTH.png
 	:align: center
 	:alt: 24. L superior AM temporal horn
 
@@ -300,7 +300,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 * Jump to 21 (right AL temporal horn) and scroll to find the most medial (and anterior) showing of the CSF
 * Optimize using the axial view again to find the most anteromedial showing of the CSF
 
-.. image:: images/25_RIAMTH.png
+.. image:: ../../figures/25_RIAMTH.png
 	:align: center
 	:alt: 25. R inferior AM temporal horn
   
@@ -310,7 +310,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 * Like in 25
 * Jump to 22 (left AL temporal horn) and scroll the find the most medial showing of the CSF
 
-.. image:: images/26_LIAMTH.png
+.. image:: ../../figures/26_LIAMTH.png
 	:align: center
 	:alt: 26. L inferior AM temporal horn
 	
@@ -320,7 +320,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 * Defined on sagittal slice at takeoff from posterior hippocampus below splenium
 * Begin on the sagittal view (make sure the view is on the right side), scroll back and forrth to find the point where the tail of the hippocampus begins to become pointed and "takeoff"
 
-.. image:: images/27_RIGO.png
+.. image:: ../../figures/27_RIGO.png
 	:align: center
 	:alt: 27. R indusium griseum origin
   
@@ -329,7 +329,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 
 * As in 27
 
-.. image:: images/28_LIGO.png
+.. image:: ../../figures/28_LIGO.png
 	:align: center
 	:alt: 28. L indusium griseum origin
 
@@ -340,7 +340,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 * If it is hard to see on the coronal view then you can make the first placement using the axial view (make sure the view is on the right side of the brain).
 * Optimize using other views
 
-.. image:: images/29_RVOH.png
+.. image:: ../../figures/29_RVOH.png
 	:align: center
 	:alt: 29. R ventral occipital horn
   
@@ -348,7 +348,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 ############################
 * As in 29
 
-.. image:: images/30_LVOH.png
+.. image:: ../../figures/30_LVOH.png
 	:align: center
 	:alt: 30. L ventral occipital horn
 
@@ -358,7 +358,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 * Sulcal fundus = at depth of sulcus and boundary of gray matter-white matter
 * Posterior and most superior portion visible on axial slice
 
-.. image:: images/31_ROSF.png
+.. image:: ../../figures/31_ROSF.png
 	:align: center
 	:alt: 31. R olfactory sulcal fundus
 	  
@@ -367,7 +367,7 @@ When placing the fiducials make sure you are on the **Fid32_[VolumeID]_[Rater]_[
 
 * As in 31
 
-.. image:: images/32_LOSF.png
+.. image:: ../../figures/32_LOSF.png
 	:align: center
 	:alt: 32. L olfactory sulcal fundus	
 	
